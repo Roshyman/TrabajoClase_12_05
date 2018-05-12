@@ -12,6 +12,9 @@
 		CE30220A20A779E30008B7DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE30220820A779E30008B7DC /* Main.storyboard */; };
 		CE30220C20A779E50008B7DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE30220B20A779E50008B7DC /* Assets.xcassets */; };
 		CE30220F20A779E50008B7DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE30220D20A779E50008B7DC /* LaunchScreen.storyboard */; };
+		CE30221D20A77D7A0008B7DC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30221C20A77D7A0008B7DC /* QuestionModel.swift */; };
+		CE30221F20A780B30008B7DC /* ListQuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30221E20A780B30008B7DC /* ListQuestionsModel.swift */; };
+		CE30223F20A7A4650008B7DC /* PreguntasRespuestasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30223E20A7A4650008B7DC /* PreguntasRespuestasController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CE30220B20A779E50008B7DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE30220E20A779E50008B7DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE30221020A779E50008B7DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE30221C20A77D7A0008B7DC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		CE30221E20A780B30008B7DC /* ListQuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQuestionsModel.swift; sourceTree = "<group>"; };
+		CE30223E20A7A4650008B7DC /* PreguntasRespuestasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreguntasRespuestasController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		CE30220320A779E30008B7DC /* MVC_Ejemplo */ = {
 			isa = PBXGroup;
 			children = (
-				CE30220420A779E30008B7DC /* AppDelegate.swift */,
-				CE30220620A779E30008B7DC /* ViewController.swift */,
-				CE30220820A779E30008B7DC /* Main.storyboard */,
+				CE30221B20A77A7B0008B7DC /* Controller */,
+				CE30221A20A77A720008B7DC /* View */,
+				CE30221620A77A280008B7DC /* Model */,
 				CE30220B20A779E50008B7DC /* Assets.xcassets */,
-				CE30220D20A779E50008B7DC /* LaunchScreen.storyboard */,
 				CE30221020A779E50008B7DC /* Info.plist */,
 			);
 			path = MVC_Ejemplo;
+			sourceTree = "<group>";
+		};
+		CE30221620A77A280008B7DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE30221C20A77D7A0008B7DC /* QuestionModel.swift */,
+				CE30221E20A780B30008B7DC /* ListQuestionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE30221A20A77A720008B7DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE30220D20A779E50008B7DC /* LaunchScreen.storyboard */,
+				CE30220820A779E30008B7DC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE30221B20A77A7B0008B7DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE30220420A779E30008B7DC /* AppDelegate.swift */,
+				CE30220620A779E30008B7DC /* ViewController.swift */,
+				CE30223E20A7A4650008B7DC /* PreguntasRespuestasController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE30221D20A77D7A0008B7DC /* QuestionModel.swift in Sources */,
 				CE30220720A779E30008B7DC /* ViewController.swift in Sources */,
 				CE30220520A779E30008B7DC /* AppDelegate.swift in Sources */,
+				CE30221F20A780B30008B7DC /* ListQuestionsModel.swift in Sources */,
+				CE30223F20A7A4650008B7DC /* PreguntasRespuestasController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
